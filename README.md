@@ -10,4 +10,6 @@ Hi! i am Vian Mallari, a Bachelor of Science in Information System student from 
 - High School: Francisco G. Nepomuceno Memorial High School
 - Elementary: Salapungan Elementary School
 
+## My Projects
+- Lab Exercise 1:
 
