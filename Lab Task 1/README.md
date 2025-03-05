@@ -15,3 +15,6 @@ The data cleaning process involves several steps to ensure thTheat data is accur
 - Perform Table split using 2NF
 - Remove duplicate columns from the same table.
 - Mapped the Normalized table on a Physical Data Model
+
+## Step 3 Here's the screenshot of my output before i started data cleaning
+
