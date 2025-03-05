@@ -17,6 +17,7 @@ The data cleaning process involves several steps to ensure thTheat data is accur
 - Mapped the Normalized table on a Physical Data Model
 
 ## Step 3 Here's the screenshot of my output before i started data cleaning
+![image alt](IMAGE/Screenshot%20(3).png)
 
 ## Step 4 Here's the screenshot of my output after i started data cleaning
 
