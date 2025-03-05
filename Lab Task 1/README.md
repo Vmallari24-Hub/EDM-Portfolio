@@ -18,3 +18,6 @@ The data cleaning process involves several steps to ensure thTheat data is accur
 
 ## Step 3 Here's the screenshot of my output before i started data cleaning
 
+## Step 4 Here's the screenshot of my output after i started data cleaning
+
+## Here's the Physical Data Model
