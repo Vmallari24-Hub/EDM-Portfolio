@@ -12,4 +12,4 @@ Hi! i am Vian Mallari, a Bachelor of Science in Information System student from 
 
 ## My Projects
 - Midterm Lab Task 1:[Data Cleaning and Preperation using Excel](Lab%20Task%201)
-
+- Midterm Lab Task 2: 
