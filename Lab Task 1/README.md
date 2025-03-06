@@ -20,5 +20,6 @@ The data cleaning process involves several steps to ensure thTheat data is accur
 ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/dbcc42f502803611e1bd8280750c4760652b6623/IMAGE/Screenshot%20(3).png)
 
 ## Step 4 Here's the screenshot of my output after i started data cleaning
+![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/95ee2322111349501f23c93a11d7b963f9512b98/IMAGE/Cleaned%20and%20Normalized.png)
 
 ## Here's the Physical Data Model
