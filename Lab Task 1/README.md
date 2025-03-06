@@ -4,6 +4,7 @@ The data cleaning process involves several steps to ensure thTheat data is accur
 - Load the raw file
 - Format column width and height
 - Remove NULL columns
+- TRIM extra spaces
 - Identify and delete duplicate records to avoid redundancy
 - Correct spelling mistakes, typos, and inconsistent naming conventions.
 - Ensure numeric, categorical, and date/time, currency are in the correct format.
