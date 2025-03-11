@@ -2,6 +2,7 @@
 ## Step 1- Cleaning the data using PowerQuery Editor
 - D
  ## Before Cleaning
+ ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/90f96d50eaf163fbda23f64931ab14ccc5c7b28a/Lab%20Task%202/Image/Capture.PNG)
  ## After Cleaning
  ![image alt ](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/378a76220ee3cba44e5034d3cacad77fd3c1419a/Lab%20Task%202/Image/Uncleaned%20Ds%20jobs.PNG)
  ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/1773f8cf095af0da41c064c794c9ba3eae069e35/Lab%20Task%202/Image/Uncleaned%20Ds%20jobs2.PNG)
