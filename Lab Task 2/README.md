@@ -3,7 +3,7 @@
 - D
  ## Before Cleaning
  ## After Cleaning
- ![image alt ](Lab%20Task%202/Image/Uncleaned%20Ds%20jobs.PNG)
+ ![image alt ](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/378a76220ee3cba44e5034d3cacad77fd3c1419a/Lab%20Task%202/Image/Uncleaned%20Ds%20jobs.PNG)
  ## Step 2- Reshaping and Grouping the Tables
  -
  # Group Tables 
