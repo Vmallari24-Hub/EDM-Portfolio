@@ -11,4 +11,4 @@
  # Group Tables 
  ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/c5a46773e40949a913bb76847de59de546ded78b/Lab%20Task%202/Image/Role%20type%20Dup.PNG)
  ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/15e7a19e98ac350d573e89792dc2ea302f05fa1a/Lab%20Task%202/Image/Role%20size%20Dup.PNG)
- 
+ ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/7f96ca1ee92d33c3eed4ffa84964eb3b90d2c0e1/Lab%20Task%202/Image/Size%20Role%20Type%20Dup.PNG)
