@@ -4,6 +4,7 @@
  ## Before Cleaning
  ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/90f96d50eaf163fbda23f64931ab14ccc5c7b28a/Lab%20Task%202/Image/Capture.PNG)
  ![image](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/20103bccd0395daa5ead03ecb9b57f7210d3d236/Lab%20Task%202/Image/Capture1.PNG)
+ ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/a831389c6fd96e49a81666694031d6d38453867a/Lab%20Task%202/Image/Capture2.PNG)
  ## After Cleaning
  ![image alt ](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/378a76220ee3cba44e5034d3cacad77fd3c1419a/Lab%20Task%202/Image/Uncleaned%20Ds%20jobs.PNG)
  ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/1773f8cf095af0da41c064c794c9ba3eae069e35/Lab%20Task%202/Image/Uncleaned%20Ds%20jobs2.PNG)
