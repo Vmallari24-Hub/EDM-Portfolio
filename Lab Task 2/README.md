@@ -1,6 +1,19 @@
 # Midterm Lab Task 2: Data Cleaning and Transformation Using Power Query Editor
 ## Step 1- Cleaning the data using PowerQuery Editor
-- D
+- Download and open the raw data given by your instructor.
+
+- Add the required columns (Min Sal, Max Sal, Role Type).
+
+- Split the columns (Salary Estimate, Location, Size).
+
+- Change the columns to appropriate data types (Currency, Text).
+
+- Filter columns (Competitors, Revenue, Industry to remove negative values).
+
+- Remove unnecessary columns to avoid redundancy (Company Name ratings, extra descriptions).
+
+- Save the M Language to a notepad.
+
  ## Before Cleaning
  ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/90f96d50eaf163fbda23f64931ab14ccc5c7b28a/Lab%20Task%202/Image/Capture.PNG)
  ![image](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/20103bccd0395daa5ead03ecb9b57f7210d3d236/Lab%20Task%202/Image/Capture1.PNG)
