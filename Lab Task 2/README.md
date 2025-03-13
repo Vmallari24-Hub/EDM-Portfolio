@@ -44,3 +44,7 @@
  ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/7f96ca1ee92d33c3eed4ffa84964eb3b90d2c0e1/Lab%20Task%202/Image/Size%20Role%20Type%20Dup.PNG)
 ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/78fdee3151363d98cbe38e6360ac31ec1b2c9a15/Lab%20Task%202/Image/State.PNG)
 ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/f346437fe5d1bcdd03bfd2d1ddc8aa2a2656f3ef/Lab%20Task%202/Image/state%20ref.PNG)
+
+## step 3- Query Dependencies 
+- Go to View Menu → Click Dependencies
+Check if all queries are correctly linked
