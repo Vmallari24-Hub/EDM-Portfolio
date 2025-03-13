@@ -11,5 +11,5 @@ Hi! i am Vian Mallari, a Bachelor of Science in Information System student from 
 - Elementary: Salapungan Elementary School
 
 ## My Projects
-- Midterm Lab Task 1: [Data Cleaning and Preperation using Excel](Lab Task 1)
+- Midterm Lab Task 1: [Data Cleaning and Preperation using Excel](https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme)
 - Midterm Lab Task 2: [Data Cleaning and Preparation using Power Query](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md)
