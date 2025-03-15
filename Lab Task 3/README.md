@@ -25,6 +25,6 @@
 # Salary by State
 ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/e97750a47a0ccea4326376a122b6f71d13b46dee/Lab%20Task%203/image/State.PNG)
 # Sector by Average Salary
-![image alt]()
+![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/63067b30ad2c8e8ad904a16ef2cd0e938309133e/Lab%20Task%203/image/sector.PNG)
 # Map
 ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/e42ab08c91ac7d2c2b9b7477f94cf4cf108b7f0a/Lab%20Task%203/image/Map.PNG)
