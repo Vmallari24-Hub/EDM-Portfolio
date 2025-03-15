@@ -27,4 +27,4 @@
 # Sector by Average Salary
 ![image alt]()
 # Map
-![image alt]()
+![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/e42ab08c91ac7d2c2b9b7477f94cf4cf108b7f0a/Lab%20Task%203/image/Map.PNG)
