@@ -21,7 +21,7 @@
 # Salary by Role
 ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/18630b9338ad7ef038164b955a825f0ae751339f/Lab%20Task%203/image/Role%20Type.PNG)
 # Salary by Size
-![image alt]()
+![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/cf110c20924b4886825ead9fb5194727d25df476/Lab%20Task%203/image/Size.PNG)
 # Salary by State
 ![image alt]()
 # Sector by Average Salary
