@@ -16,3 +16,4 @@
 - Use visualizations for reports
 - Insert Slicers 
 - Insert Map
+# Dashboard Image
