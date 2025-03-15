@@ -17,3 +17,4 @@
 - Insert Slicers 
 - Insert Map
 # Dashboard Image
+!(image alt)[https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/8324b41f22ed28603f2e663bb05b004647a04180/Lab%20Task%203/image/Dashboard.PNG
