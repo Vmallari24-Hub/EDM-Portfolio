@@ -23,7 +23,7 @@
 # Salary by Size
 ![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/cf110c20924b4886825ead9fb5194727d25df476/Lab%20Task%203/image/Size.PNG)
 # Salary by State
-![image alt]()
+![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/e97750a47a0ccea4326376a122b6f71d13b46dee/Lab%20Task%203/image/State.PNG)
 # Sector by Average Salary
 ![image alt]()
 # Map
