@@ -11,6 +11,12 @@ Hi! i am Vian Mallari, a Bachelor of Science in Information System student from 
 - Elementary: Salapungan Elementary School
 
 ## My Projects
+**Midterm Activity**
 - Midterm Lab Task 1: [Data Cleaning and Preperation using Excel](https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme)
 - Midterm Lab Task 2: [Data Cleaning and Preparation using Power Query](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md)
 - Midterm Lab Task 3: [Creating Pivot Table and Dashboard](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md)
+  
+**Finals Activity**
+- Final Lab Task 1: [MYSQL Basics]()
+- Final Lab Task 2: [Transforming ER Model to Relational Tables]()
+- Final Lab Task 3: [Table Manipulation]()
