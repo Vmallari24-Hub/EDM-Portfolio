@@ -20,3 +20,4 @@ Hi! i am Vian Mallari, a Bachelor of Science in Information System student from 
 - Final Lab Task 1: [MYSQL Basics]()
 - Final Lab Task 2: [Transforming ER Model to Relational Tables]()
 - Final Lab Task 3: [Table Manipulation]()
+- Final Lab Task 3-1: [Using MYSQL Clause]()
