@@ -18,6 +18,6 @@
 - Many-to-One with assignment: Each submission is for one assignment
 - This models a Many-to-Many relationship between students and assignments, with version tracking multiple submissions
 # Query Statements
-![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/95ee2322111349501f23c93a11d7b963f9512b98/IMAGE/Cleaned%20and%20Normalized.png)
+![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/afd11603e298176beec709d31d0d602fa7c4bfc7/IMAGE/TASK%202%20%201.PNG)
 # Table Structures
 # Relational Tables
