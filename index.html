@@ -26,24 +26,12 @@
     }
 
     @keyframes glitch {
-      0% {
-        text-shadow: 2px 0 red, -2px 0 blue;
-      }
-      20% {
-        text-shadow: -2px -2px red, 2px 2px blue;
-      }
-      40% {
-        text-shadow: 2px 2px red, -2px -2px blue;
-      }
-      60% {
-        text-shadow: -2px 2px red, 2px -2px blue;
-      }
-      80% {
-        text-shadow: 2px -2px red, -2px 2px blue;
-      }
-      100% {
-        text-shadow: -2px 0 red, 2px 0 blue;
-      }
+      0% { text-shadow: 2px 0 red, -2px 0 blue; }
+      20% { text-shadow: -2px -2px red, 2px 2px blue; }
+      40% { text-shadow: 2px 2px red, -2px -2px blue; }
+      60% { text-shadow: -2px 2px red, 2px -2px blue; }
+      80% { text-shadow: 2px -2px red, -2px 2px blue; }
+      100% { text-shadow: -2px 0 red, 2px 0 blue; }
     }
 
     .hidden {
@@ -77,6 +65,25 @@
       font-size: 20px;
       text-decoration: underline;
     }
+
+    a {
+      color: #00ff00;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #00ffff;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
@@ -90,7 +97,7 @@
   <div id="mainContent" class="hidden">
     <h1 class="glitch">Vian Mhar R. Mallari EDM-Portfolio</h1>
     <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
-    
+
     <div class="section-title">About Me</div>
     <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</p>
 
@@ -99,6 +106,24 @@
     <p><strong>Senior High School:</strong> Angeles City Senior High School</p>
     <p><strong>High School:</strong> Francisco G. Nepomuceno Memorial High School</p>
     <p><strong>Elementary:</strong> Salapungan Elementary School</p>
+
+    <div class="section-title">My Projects</div>
+
+    <h3 style="color:#00ffff;">Midterm Activity</h3>
+    <ul>
+      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
+    </ul>
+
+    <h3 style="color:#00ffff;">Finals Activity</h3>
+    <ul>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">Finals Lab Task 1: MySQL Basics</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">Finals Lab Task 4: Using MySQL Clause</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">Finals Lab Task 5: Using SQL Views, Stored Procedures & Functions</a></li>
+    </ul>
   </div>
 
   <div id="exitMessage" class="hidden">
