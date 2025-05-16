@@ -1,61 +1,74 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vian Mallari - EDM Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vian Mallari | EDM Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
-      color: #333;
+      background: #f3f9ff;
       margin: 0;
-      padding: 20px;
-    }
-    h1, h2, h3 {
-      color: #0d47a1;
-    }
-    ul {
-      list-style-type: none;
       padding: 0;
     }
-    a {
-      color: #0277bd;
+
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2, h3 {
+      color: #003366;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li a {
       text-decoration: none;
-      display: block;
-      margin: 5px 0;
-      padding: 8px;
-      border: 1px solid #90caf9;
-      border-radius: 8px;
-      background-color: #e3f2fd;
+      color: #0066cc;
     }
-    a:hover {
-      background-color: #bbdefb;
+
+    li a:hover {
+      text-decoration: underline;
     }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: 2px solid #ccc;
-      border-radius: 10px;
+
+    .activity-links {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    .iframe-container {
       margin-top: 20px;
     }
-    .section {
-      margin-bottom: 30px;
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Vian Mallari</h1>
+    <h2>EDM-Portfolio</h2>
+    <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises.</p>
+  </header>
 
-  <h1>Vian Mallari</h1>
-  <h2>EDM-Portfolio</h2>
-  <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises.</p>
-
-  <div class="section">
+  <section>
     <h3>About Me</h3>
     <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I started loving coding.</p>
-  </div>
-
-  <div class="section">
+    
     <h3>Education</h3>
     <ul>
       <li>College: City College of Angeles</li>
@@ -63,41 +76,32 @@
       <li>High School: Francisco G. Nepomuceno Memorial High School</li>
       <li>Elementary: Salapungan Elementary School</li>
     </ul>
-  </div>
-
-  <div class="section">
+    
     <h3>Midterm Activity</h3>
-    <ul>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Midterm-lab-task-1')">Midterm Lab Task 1: Excel</a></li>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Midterm-lab-task-2')">Midterm Lab Task 2: Power Query</a></li>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Midterm-lab-task-3')">Midterm Lab Task 3: Pivot Table</a></li>
+    <ul class="activity-links">
+      <li><a href="https://github.com/Vmallari24-Hub/Midterm-lab-task-1" target="activityFrame">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Midterm-lab-task-2" target="activityFrame">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Midterm-lab-task-3" target="activityFrame">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
     </ul>
-  </div>
 
-  <div class="section">
     <h3>Finals Activity</h3>
-    <ul>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-1')">Final Lab Task 1: MYSQL Basics</a></li>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-2')">Final Lab Task 2: ER Model</a></li>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-3')">Final Lab Task 3: Table Manipulation</a></li>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-3.1')">Final Lab Task 3-1: MYSQL Clause</a></li>
-      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-5')">Final Lab Task 5</a></li>
+    <ul class="activity-links">
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-1" target="activityFrame">Final Lab Task 1: MYSQL Basics</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-2" target="activityFrame">Final Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-3" target="activityFrame">Final Lab Task 3: Table Manipulation</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-3.1" target="activityFrame">Final Lab Task 3-1: Using MYSQL Clause</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-5" target="activityFrame">Final Lab Task 5</a></li>
     </ul>
-  </div>
 
-  <h3>Activity Preview</h3>
-  <iframe id="activityFrame" src=""></iframe>
+    <div class="iframe-container">
+      <iframe name="activityFrame" src=""></iframe>
+    </div>
+  </section>
 
-  <!-- Background music (COPY version only!) -->
+  <!-- Background Music (non-official copy) -->
   <audio autoplay loop>
-    <source src="music/dive-copy-version.mp3" type="audio/mpeg" />
+    <source src="music/dive-copy-version.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-
-  <script>
-    function loadActivity(url) {
-      document.getElementById('activityFrame').src = url;
-    }
-  </script>
 </body>
 </html>
