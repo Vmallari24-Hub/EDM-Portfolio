@@ -2,32 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vian's Hacker Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       background-color: #0d1117;
       color: #00ff00;
       font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       padding: 20px;
     }
+
     .terminal {
+      background-color: #000000cc;
+      border: 2px solid #00bfff;
+      box-shadow: 0 0 15px #00bfff99;
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+      max-width: 960px;
+      line-height: 1.6;
       white-space: pre-wrap;
-      line-height: 1.5;
+      overflow-x: auto;
     }
+
     .blue {
       color: #00bfff;
     }
+
     .green {
-      color: #00ff00;
+      color: #ff3131;
     }
+
     a {
       color: #00bfff;
       text-decoration: underline;
-      cursor: pointer;
     }
+
     a:hover {
-      color: #00ff00;
+      color: #ff3131;
     }
+
     button {
       background-color: transparent;
       border: 1px solid #00ff00;
@@ -36,9 +60,23 @@
       padding: 10px 20px;
       margin-top: 10px;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
+
     button:hover {
       background-color: #00ff0033;
+    }
+
+    @media (max-width: 600px) {
+      .terminal {
+        font-size: 14px;
+        padding: 15px;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 14px;
+      }
     }
   </style>
 </head>
@@ -57,7 +95,7 @@
 <span class="blue">This portfolio contains copies of my Enterprise Data Management Lab Exercises</span>
 
 <span class="green">About Me</span>
-<span class="blue">Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday</span>
+<span class="blue">Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</span>
 
 <span class="green">Education</span>
 <span class="blue">College: City College of Angeles</span>
