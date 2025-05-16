@@ -20,9 +20,6 @@
     .green {
       color: #00ff00;
     }
-    .blink {
-      animation: blink 1s steps(2, start) infinite;
-    }
     a {
       color: #00bfff;
       text-decoration: underline;
@@ -60,7 +57,7 @@
 <span class="blue">This portfolio contains copies of my Enterprise Data Management Lab Exercises</span>
 
 <span class="green">About Me</span>
-<span class="blue">Hi! i am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles.  I'm striving to become successful someday</span>
+<span class="blue">Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday</span>
 
 <span class="green">Education</span>
 <span class="blue">College: City College of Angeles</span>
@@ -71,39 +68,24 @@
 <span class="green">My Projects</span>
 
 <span class="green">Midterm Activity</span>
-<span class="blue">- Midterm Lab Task 1: Data Cleaning and Preparation using Excel (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank" rel="noopener noreferrer">link</a>)</span>
-<span class="blue">- Midterm Lab Task 2: Data Cleaning and Preparation using Power Query (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank" rel="noopener noreferrer">link</a>)</span>
-<span class="blue">- Midterm Lab Task 3: Creating Pivot Table and Dashboard (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Midterm Lab Task 1: Data Cleaning and Preparation using Excel (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">link</a>)</span>
+<span class="blue">- Midterm Lab Task 2: Data Cleaning and Preparation using Power Query (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">link</a>)</span>
+<span class="blue">- Midterm Lab Task 3: Creating Pivot Table and Dashboard (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">link</a>)</span>
 
 <span class="green">Finals Activity</span>
-<span class="blue">- Finals Lab Task 1: MYSQL Basics (<a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank" rel="noopener noreferrer">link</a>)</span>
-<span class="blue">- Finals Lab Task 2: Transforming ER Model to Relational Tables (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
-<span class="blue">- Finals Lab Task 3: Table Manipulation (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
-<span class="blue">- Finals Lab Task 4: Using MYSQL Clause (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
-<span class="blue">- Finals Lab Task 5: Using SQL views and Stored Procedures and Stored Functions (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Finals Lab Task 1: MYSQL Basics (<a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">link</a>)</span>
+<span class="blue">- Finals Lab Task 2: Transforming ER Model to Relational Tables (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">link</a>)</span>
+<span class="blue">- Finals Lab Task 3: Table Manipulation (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">link</a>)</span>
+<span class="blue">- Finals Lab Task 4: Using MYSQL Clause (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">link</a>)</span>
+<span class="blue">- Finals Lab Task 5: Using SQL views and Stored Procedures and Stored Functions (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">link</a>)</span>
 `;
 
     function showPortfolio() {
-      terminal.innerHTML = '';
-      typeText(portfolioHTML, 0);
+      terminal.innerHTML = portfolioHTML;
     }
 
     function getLost() {
-      terminal.innerHTML = '';
-      const msg = "Well, get lost.";
-      typeText(msg, 0);
-    }
-
-    function typeText(text, index) {
-      if (index < text.length) {
-        terminal.innerHTML += text.charAt(index);
-        setTimeout(() => typeText(text, index + 1), 10);
-      } else {
-        const cursor = document.createElement('span');
-        cursor.classList.add('blink');
-        cursor.textContent = '█';
-        terminal.appendChild(cursor);
-      }
+      terminal.innerHTML = '<span class="green">Well, get lost.</span>';
     }
   </script>
 </body>
