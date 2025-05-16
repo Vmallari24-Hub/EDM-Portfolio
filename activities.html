@@ -1,32 +1,46 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
+  <title>My Projects - EDM Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 800px;
+      margin: 0;
+      padding: 30px;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      max-width: 900px;
       margin: auto;
     }
-    h2 {
-      margin-top: 30px;
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
     }
-    .section {
-      display: none;
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-top: 40px;
     }
     ul {
-      list-style: none;
+      list-style-type: none;
       padding: 0;
     }
     li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     a {
+      color: #9fd0ff;
       text-decoration: none;
-      color: #0066cc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      display: none;
     }
   </style>
 </head>
@@ -55,10 +69,11 @@
 
   <script>
     const section = window.location.hash.replace('#', '');
-    if (section === "midterm" || section === "finals") {
+    const validSections = ["midterm", "finals"];
+    if (validSections.includes(section)) {
       document.getElementById(section).style.display = "block";
     } else {
-      document.body.innerHTML += "<p>Please select a valid activity from the landing page.</p>";
+      document.body.innerHTML += "<p style='text-align:center;'>Please go back and choose a valid activity type from the landing page.</p>";
     }
   </script>
 </body>
