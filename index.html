@@ -1,38 +1,45 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vian Mallari Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
       background: url('IMAGE/cb0b1852-f745-4619-a7ca-e2ffdc21ea23.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
+      padding: 20px;
     }
 
     .container {
-      padding-top: 15%;
+      max-width: 90%;
     }
 
     h1 {
-      font-size: 4em;
-      margin-bottom: 10px;
+      font-size: 8vw;
+      margin: 0.2em 0;
     }
 
     p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: auto;
+      font-size: 4vw;
+      margin-bottom: 1.5em;
     }
 
     .button {
-      margin-top: 20px;
-      padding: 15px 30px;
-      font-size: 1.1em;
+      padding: 12px 24px;
+      font-size: 4vw;
       background-color: #ff4081;
       color: white;
       text-decoration: none;
@@ -43,6 +50,12 @@
 
     .button:hover {
       background-color: #e91e63;
+    }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 3em; }
+      p { font-size: 1.2em; }
+      .button { font-size: 1em; }
     }
   </style>
 </head>
@@ -57,7 +70,8 @@
 
   <script>
     function playSound() {
-      document.getElementById("spaceshipSound").play();
+      const sound = document.getElementById("spaceshipSound");
+      if (sound) sound.play();
     }
   </script>
 </body>
