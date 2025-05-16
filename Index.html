@@ -1,0 +1,58 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vian Mallari Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+    }
+    button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff5c5c;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff1f1f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vian Mallari</h1>
+    <button id="startBtn">Start</button>
+  </div>
+
+  <audio id="spacesound" src="spaceship-sound.mp3" preload="auto"></audio>
+
+  <script>
+    document.getElementById("startBtn").addEventListener("click", function () {
+      document.getElementById("spacesound").play();
+      setTimeout(() => {
+        window.location.href = "https://vmallari24-hub.github.io/EDM-Portfolio/";
+      }, 800);
+    });
+  </script>
+</body>
+</html>
