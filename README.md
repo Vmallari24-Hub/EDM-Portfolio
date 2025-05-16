@@ -19,5 +19,5 @@ Hi! i am Vian Mallari, a Bachelor of Science in Information System student from 
 **Finals Activity**
 - Final Lab Task 1: [MYSQL Basics](https://github.com/Vmallari24-Hub/Finals-Lab_Task-1)
 - Final Lab Task 2: [Transforming ER Model to Relational Tables](https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main)
-- Final Lab Task 3: [Table Manipulation](https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/fa27078a9c11f296160c77ecbd7d30fca043f06a/Final%20Lab%20Task%203)
+- Final Lab Task 3: [Table Manipulation](https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main)
 - Final Lab Task 3-1: [Using MYSQL Clause]()
