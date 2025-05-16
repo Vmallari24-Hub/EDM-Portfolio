@@ -1,146 +1,124 @@
-<!DOCTYPE html>
+<!D<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EDM Portfolio</title>
+  <title>EDM Portfolio | Vmallari24</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0b0c1d;
-      color: white;
-      background-image: radial-gradient(circle at top center, #1d1f33 0%, #0b0c1d 100%);
+      padding: 2rem;
+      background: radial-gradient(ellipse at center, #0b0c26 0%, #000000 90%);
+      color: #d0d6f9;
+      font-family: 'Orbitron', sans-serif;
       min-height: 100vh;
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #66ccff;
       text-align: center;
-      margin-bottom: 20px;
     }
-    .buttons {
-      text-align: center;
-      margin-bottom: 30px;
+    .btn-container {
+      margin: 2rem 0;
     }
     button {
-      margin: 10px;
-      padding: 12px 25px;
-      font-size: 16px;
-      background-color: #2c2f4d;
-      color: white;
-      border: none;
-      border-radius: 5px;
+      margin: 0 1rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      background-color: transparent;
+      color: #99e6ff;
+      border: 2px solid #99e6ff;
+      border-radius: 8px;
       cursor: pointer;
+      transition: background 0.3s;
     }
     button:hover {
-      background-color: #4c4f7f;
+      background-color: #66ccff40;
     }
-    .section, .task-content {
-      display: none;
-      margin: 20px auto;
-      max-width: 800px;
-      background-color: #1d1f33;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .task-list ul {
+    ul {
       list-style-type: none;
       padding: 0;
+      max-width: 800px;
+      width: 100%;
     }
-    .task-list li {
-      margin: 10px 0;
-      cursor: pointer;
-      color: #9fd0ff;
+    li {
+      background: rgba(20, 29, 78, 0.7);
+      margin: 1rem 0;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #66ccff80;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .task-list li:hover {
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px #99e6ffcc;
+    }
+    a {
+      color: #99e6ff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      display: block;
+    }
+    a:hover {
       text-decoration: underline;
     }
-    .back {
-      margin-top: 20px;
-      display: inline-block;
-      color: #ccc;
-      cursor: pointer;
+    .hidden {
+      display: none;
+    }
+    footer {
+      margin-top: 3rem;
+      color: #444a66;
+      font-size: 0.9rem;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://i.ibb.co/7NqCZcR/starfield.png') repeat;
+      opacity: 0.3;
+      z-index: -1;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
-
   <h1>My EDM Portfolio</h1>
 
-  <div class="buttons">
+  <div class="btn-container">
     <button onclick="showSection('midterm')">Midterm Activity</button>
     <button onclick="showSection('finals')">Finals Activity</button>
   </div>
 
-  <div id="midterm" class="section task-list">
-    <h2>Midterm Activities</h2>
-    <ul>
-      <li onclick="showTask('midterm1')">Lab Task 1: Data Cleaning and Preparation using Excel</li>
-      <li onclick="showTask('midterm2')">Lab Task 2: Data Cleaning and Preparation using Power Query</li>
-      <li onclick="showTask('midterm3')">Lab Task 3: Creating Pivot Table and Dashboard</li>
-    </ul>
-  </div>
+  <ul id="midterm" class="hidden">
+    <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+    <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+    <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
+  </ul>
 
-  <div id="finals" class="section task-list">
-    <h2>Finals Activities</h2>
-    <ul>
-      <li onclick="showTask('finals1')">Lab Task 1: MYSQL Basics</li>
-      <li onclick="showTask('finals2')">Lab Task 2: ER Model to Relational Tables</li>
-      <li onclick="showTask('finals3')">Lab Task 3: Table Manipulation</li>
-      <li onclick="showTask('finals4')">Lab Task 4: Using MYSQL Clause</li>
-      <li onclick="showTask('finals5')">Lab Task 5: SQL Views, Stored Procedures & Functions</li>
-    </ul>
-  </div>
+  <ul id="finals" class="hidden">
+    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">Finals Lab Task 1: MYSQL Basics</a></li>
+    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
+    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1" target="_blank">Finals Lab Task 4: Using MYSQL Clause</a></li>
+    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5" target="_blank">Finals Lab Task 5: SQL Views, Stored Procedures & Functions</a></li>
+  </ul>
 
-  <!-- TASK CONTENTS -->
-  <div id="midterm1" class="task-content">
-    <h3>Midterm Lab Task 1</h3>
-    <p>[# Midterm Lab Task 1- Data Cleaning and Preparation using Excel
-The data cleaning process involves several steps to ensure thTheat data is accurate, complete, and ready for analysis.
-## Step 1: 
-- Load the raw file
-- Format column width and height
-- Remove NULL columns
-- TRIM extra spaces
-- Identify and delete duplicate records to avoid redundancy
-- Correct spelling mistakes, typos, and inconsistent naming conventions.
-- Ensure numeric, categorical, and date/time, currency are in the correct format.
+  <footer>© 2025 EDM Portfolio by Vmallari24</footer>
 
-## Step 2:
-- Perform 1NF
-- Ensure each column has atomic values.
-- Each row must have a unique identifier (Primary Key),and add if needed.
-- Perform Table split using 2NF
-- Remove duplicate columns from the same table.
-- Mapped the Normalized table on a Physical Data Model
-
-## Step 3 Here's the screenshot of my output before i started data cleaning
-![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/dbcc42f502803611e1bd8280750c4760652b6623/IMAGE/Screenshot%20(3).png)
-
-## Step 4 Here's the screenshot of my output after i started data cleaning
-![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/95ee2322111349501f23c93a11d7b963f9512b98/IMAGE/Cleaned%20and%20Normalized.png)
-
-## Here's the Physical Data Model
-![image alt](https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/6b38000c26b2a669afa2d7f427896f98eeadc563/IMAGE/Relation%20Model.png)
-]</p>
-    <span class="back" onclick="goBack()">← Back</span>
-  </div>
-
-  <div id="midterm2" class="task-content">
-    <h3>Midterm Lab Task 2</h3>
-    <p>[Insert content here]</p>
-    <span class="back" onclick="goBack()">← Back</span>
-  </div>
-
-  <div id="midterm3" class="task-content">
-    <h3>Midterm Lab Task 3</h3>
-    <p>[Insert content here]</p>
-    <span class="back" onclick="goBack()">← Back</span>
-  </div>
-
-  <div id="finals1" class="task-content">
-    <h3>Finals Lab Task 1</h3>
-    <p>[Insert content here]</p>
+  <script>
+    function showSection(section) {
+      document.getElementById("midterm").classList.add("hidden");
+      document.getElementById("finals").classList.add("hidden");
+      document.getElementById(section).classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>OCTYPE html>
+<ht    <p>[Insert content here]</p>
     <span class="back" onclick="goBack()">← Back</span>
   </div>
 
