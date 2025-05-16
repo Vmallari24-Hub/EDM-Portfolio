@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vian's Hacker Portfolio</title>
+  <title>Vian's HxH Portfolio</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,20 +12,21 @@
     }
 
     body {
-      background-color: #0d1117;
-      color: #00ff00;
+      background-color: #0a0f0d;
       font-family: 'Courier New', Courier, monospace;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       padding: 20px;
+      color: #00ff00;
+      background-image: radial-gradient(circle at center, #001100 0%, #000000 100%);
     }
 
     .terminal {
-      background-color: #000000cc;
-      border: 2px solid #00bfff;
-      box-shadow: 0 0 15px #00bfff99;
+      background-color: #000000dd;
+      border: 2px solid #00ff00;
+      box-shadow: 0 0 25px #00ff00;
       border-radius: 12px;
       padding: 20px;
       width: 100%;
@@ -35,36 +36,47 @@
       overflow-x: auto;
     }
 
-    .blue {
-      color: #00bfff;
+    .title {
+      color: #39ff14;
+      font-weight: bold;
+      font-size: 22px;
     }
 
-    .green {
-      color: #ff3131;
+    .section {
+      margin-top: 15px;
+      color: #00eaff;
+      font-weight: bold;
+    }
+
+    .content {
+      color: #ffffffcc;
+      margin-left: 10px;
     }
 
     a {
-      color: #00bfff;
+      color: #00eaff;
       text-decoration: underline;
     }
 
     a:hover {
-      color: #ff3131;
+      color: #39ff14;
     }
 
     button {
       background-color: transparent;
-      border: 1px solid #00ff00;
-      color: #00ff00;
+      border: 1px solid #39ff14;
+      color: #39ff14;
       font-family: 'Courier New', monospace;
       padding: 10px 20px;
       margin-top: 10px;
+      margin-right: 10px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, box-shadow 0.3s;
     }
 
     button:hover {
-      background-color: #00ff0033;
+      background-color: #39ff1433;
+      box-shadow: 0 0 10px #39ff14;
     }
 
     @media (max-width: 600px) {
@@ -74,7 +86,7 @@
       }
 
       button {
-        padding: 8px 16px;
+        padding: 8px 14px;
         font-size: 14px;
       }
     }
@@ -82,7 +94,8 @@
 </head>
 <body>
   <div class="terminal" id="terminal">
-    <span>This is Vian's Portfolio. Do you want to go deep?</span><br><br>
+    <div class="title">Vian's Hunter x Hunter Portfolio</div><br>
+    <span>Do you want to begin your Nen journey?</span><br><br>
     <button onclick="showPortfolio()">Yes</button>
     <button onclick="getLost()">No</button>
   </div>
@@ -91,31 +104,35 @@
     const terminal = document.getElementById('terminal');
 
     const portfolioHTML = `
-<span class="green">EDM-Portfolio</span>
-<span class="blue">This portfolio contains copies of my Enterprise Data Management Lab Exercises</span>
+<div class="section">EDM-Portfolio</div>
+<div class="content">This portfolio contains copies of my Enterprise Data Management Lab Exercises</div>
 
-<span class="green">About Me</span>
-<span class="blue">Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</span>
+<div class="section">About Me</div>
+<div class="content">Hi! I am Vian Mallari, a BS Information System student from City College of Angeles. I'm training my skills like a true Hunter.</div>
 
-<span class="green">Education</span>
-<span class="blue">College: City College of Angeles</span>
-<span class="blue">Senior High School: Angeles City Senior High School</span>
-<span class="blue">High School: Francisco G. Nepomuceno Memorial High School</span>
-<span class="blue">Elementary: Salapungan Elementary School</span>
+<div class="section">Education</div>
+<div class="content">
+- College: City College of Angeles<br>
+- Senior High School: Angeles City Senior High School<br>
+- High School: Francisco G. Nepomuceno Memorial High School<br>
+- Elementary: Salapungan Elementary School
+</div>
 
-<span class="green">My Projects</span>
+<div class="section">Midterm Activities</div>
+<div class="content">
+- Lab Task 1: Excel Cleaning (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">link</a>)<br>
+- Lab Task 2: Power Query (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">link</a>)<br>
+- Lab Task 3: Pivot Tables & Dashboards (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">link</a>)
+</div>
 
-<span class="green">Midterm Activity</span>
-<span class="blue">- Midterm Lab Task 1: Data Cleaning and Preparation using Excel (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">link</a>)</span>
-<span class="blue">- Midterm Lab Task 2: Data Cleaning and Preparation using Power Query (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">link</a>)</span>
-<span class="blue">- Midterm Lab Task 3: Creating Pivot Table and Dashboard (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">link</a>)</span>
-
-<span class="green">Finals Activity</span>
-<span class="blue">- Finals Lab Task 1: MYSQL Basics (<a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">link</a>)</span>
-<span class="blue">- Finals Lab Task 2: Transforming ER Model to Relational Tables (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">link</a>)</span>
-<span class="blue">- Finals Lab Task 3: Table Manipulation (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">link</a>)</span>
-<span class="blue">- Finals Lab Task 4: Using MYSQL Clause (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">link</a>)</span>
-<span class="blue">- Finals Lab Task 5: Using SQL views and Stored Procedures and Stored Functions (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">link</a>)</span>
+<div class="section">Final Activities</div>
+<div class="content">
+- Lab Task 1: MySQL Basics (<a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">link</a>)<br>
+- Lab Task 2: ER to Relational Tables (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">link</a>)<br>
+- Lab Task 3: Table Manipulation (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">link</a>)<br>
+- Lab Task 4: MySQL Clauses (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">link</a>)<br>
+- Lab Task 5: Views & Stored Procedures (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">link</a>)
+</div>
 `;
 
     function showPortfolio() {
@@ -123,7 +140,7 @@
     }
 
     function getLost() {
-      terminal.innerHTML = '<span class="green">Well, get lost.</span>';
+      terminal.innerHTML = `<div class="content">You're not ready to be a Hunter. Come back when you master Zetsu.</div>`;
     }
   </script>
 </body>
