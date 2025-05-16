@@ -1,89 +1,91 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vian Mallari Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDM Portfolio - Hacker Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    h1 {
-      text-align: center;
-      font-size: 3em;
-      margin: 30px 0;
-      color: #fff;
-      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+    html, body {
+      height: 100%;
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #000;
+      color: #00ff00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: rgba(0, 0, 0, 0.6);
+    .notification-box {
+      border: 2px solid #00ffff;
       padding: 30px;
-      border-radius: 15px;
+      border-radius: 10px;
+      max-width: 800px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 0 20px #00ffff;
     }
 
-    h2 {
-      border-bottom: 2px solid #0ff;
-      padding-bottom: 5px;
+    .notification-title {
+      font-size: 2rem;
+      color: #00ffff;
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #00ffff;
+      padding-bottom: 10px;
     }
 
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+    .section-title {
+      color: #00ffff;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
     }
 
-    li::before {
-      content: "✨";
-      margin-right: 10px;
-      color: #0ff;
-    }
-
-    .glow-button {
-      display: inline-block;
-      background-color: #000;
-      border: 2px solid #0ff;
-      color: #0ff;
-      padding: 10px 20px;
-      margin: 5px 0;
-      border-radius: 10px;
+    .start-btn {
+      display: block;
+      margin: 30px auto 0;
+      padding: 10px 40px;
+      font-size: 1rem;
+      background: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s ease;
       text-decoration: none;
       text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+      width: fit-content;
     }
 
-    .glow-button:hover {
-      background-color: #0ff;
-      color: #000;
-      box-shadow: 0 0 20px #0ff;
+    .start-btn:hover {
+      background-color: #00ffff;
+      color: black;
+      box-shadow: 0 0 10px #00ffff;
     }
   </style>
 </head>
 <body>
-  <h1>Vian Mallari</h1>
-  <div class="container">
+  <div class="notification-box">
+    <div class="notification-title">EDM-Portfolio</div>
+
     <div class="section">
-      <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
+      <div class="section-title">About Me</div>
+      <div>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</div>
     </div>
 
     <div class="section">
-      <h2>About Me</h2>
-      <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</p>
-    </div>
-
-    <div class="section">
-      <h2>Education</h2>
+      <div class="section-title">Education</div>
       <ul>
         <li>College: City College of Angeles</li>
         <li>Senior High School: Angeles City Senior High School</li>
@@ -93,19 +95,23 @@
     </div>
 
     <div class="section">
-      <h2>My Projects</h2>
-      <h3>Midterm Activity</h3>
-      <a class="glow-button" href="#">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a><br>
-      <a class="glow-button" href="#">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a><br>
-      <a class="glow-button" href="#">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a>
-
-      <h3>Finals Activity</h3>
-      <a class="glow-button" href="#">Finals Lab Task 1: MYSQL Basics</a><br>
-      <a class="glow-button" href="#">Finals Lab Task 2: Transforming ER Model to Relational Tables</a><br>
-      <a class="glow-button" href="#">Finals Lab Task 3: Table Manipulation</a><br>
-      <a class="glow-button" href="#">Finals Lab Task 4: Using MYSQL Clause</a><br>
-      <a class="glow-button" href="#">Finals Lab Task 5: Using SQL Views, Stored Procedures and Functions</a>
+      <div class="section-title">My Projects</div>
+      <ul>
+        <li><strong>Midterm Activity</strong></li>
+        <li>• Midterm Lab Task 1: Data Cleaning and Preparation using Excel</li>
+        <li>• Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</li>
+        <li>• Midterm Lab Task 3: Creating Pivot Table and Dashboard</li>
+        <br>
+        <li><strong>Finals Activity</strong></li>
+        <li>• Finals Lab Task 1: MYSQL Basics</li>
+        <li>• Finals Lab Task 2: Transforming ER Model to Relational Tables</li>
+        <li>• Finals Lab Task 3: Table Manipulation</li>
+        <li>• Finals Lab Task 4: Using MYSQL Clause</li>
+        <li>• Finals Lab Task 5: Using SQL Views, Stored Procedures, and Stored Functions</li>
+      </ul>
     </div>
+
+    <a href="portfolio.html" class="start-btn">START</a>
   </div>
 </body>
 </html>
