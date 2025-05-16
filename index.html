@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Vian Mallari Portfolio</title>
   <style>
     body {
@@ -10,11 +10,18 @@
       font-family: 'Courier New', Courier, monospace;
       text-align: center;
       padding: 50px;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     h1, h2 {
       color: #00ffff;
       position: relative;
+      margin-bottom: 15px;
     }
 
     .glitch {
@@ -23,15 +30,28 @@
       position: relative;
       display: inline-block;
       animation: glitch 1s infinite;
+      margin-bottom: 30px;
     }
 
     @keyframes glitch {
-      0% { text-shadow: 2px 0 red, -2px 0 blue; }
-      20% { text-shadow: -2px -2px red, 2px 2px blue; }
-      40% { text-shadow: 2px 2px red, -2px -2px blue; }
-      60% { text-shadow: -2px 2px red, 2px -2px blue; }
-      80% { text-shadow: 2px -2px red, -2px 2px blue; }
-      100% { text-shadow: -2px 0 red, 2px 0 blue; }
+      0% {
+        text-shadow: 2px 0 red, -2px 0 blue;
+      }
+      20% {
+        text-shadow: -2px -2px red, 2px 2px blue;
+      }
+      40% {
+        text-shadow: 2px 2px red, -2px -2px blue;
+      }
+      60% {
+        text-shadow: -2px 2px red, 2px -2px blue;
+      }
+      80% {
+        text-shadow: 2px -2px red, -2px 2px blue;
+      }
+      100% {
+        text-shadow: -2px 0 red, 2px 0 blue;
+      }
     }
 
     .hidden {
@@ -42,48 +62,73 @@
       background-color: black;
       color: #00ff00;
       border: 2px solid #00ffff;
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 16px;
+      padding: 12px 28px;
+      margin: 15px 10px;
+      font-size: 18px;
       cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      border-radius: 8px;
+      letter-spacing: 1.1px;
+      font-weight: bold;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px #00ffff;
     }
 
     button:hover {
       background-color: #003300;
       transform: scale(1.1);
+      box-shadow: 0 0 20px #00ffff;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
+      padding: 30px;
+      background: rgba(0, 255, 255, 0.1);
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 25px #00ffff;
+      border-radius: 15px;
+      text-align: left;
+      color: #00ff00;
     }
 
     .section-title {
-      margin-top: 30px;
+      margin-top: 35px;
       color: #00ffff;
-      font-size: 20px;
+      font-size: 24px;
       text-decoration: underline;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
-    a {
-      color: #00ff00;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #00ffff;
+    p, ul {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 18px;
     }
 
     ul {
-      list-style-type: none;
-      padding: 0;
+      padding-left: 25px;
     }
 
-    li {
-      margin: 10px 0;
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s ease;
     }
+
+    a:hover {
+      color: #00ff00;
+      text-decoration: underline;
+    }
+
+    /* Center the start and exit screens */
+    #startScreen, #exitMessage {
+      max-width: 600px;
+      margin: auto;
+    }
+
   </style>
 </head>
 <body>
@@ -94,10 +139,10 @@
     <button onclick="exitPortal()">No</button>
   </div>
 
-  <div id="mainContent" class="hidden">
-    <h1 class="glitch">Vian Mhar R. Mallari EDM-Portfolio</h1>
-    <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
-
+  <div id="mainContent" class="hidden container">
+    <h1 class="glitch" style="text-align:center;">Vian Mhar R. Mallari EDM-Portfolio</h1>
+    <p style="text-align:center;">This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
+    
     <div class="section-title">About Me</div>
     <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</p>
 
@@ -108,21 +153,19 @@
     <p><strong>Elementary:</strong> Salapungan Elementary School</p>
 
     <div class="section-title">My Projects</div>
-
-    <h3 style="color:#00ffff;">Midterm Activity</h3>
+    <h3>Midterm Activity</h3>
     <ul>
-      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
-      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
-      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-1/" target="_blank" rel="noopener noreferrer">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-2/" target="_blank" rel="noopener noreferrer">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank" rel="noopener noreferrer">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
     </ul>
-
-    <h3 style="color:#00ffff;">Finals Activity</h3>
+    <h3>Finals Activity</h3>
     <ul>
-      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">Finals Lab Task 1: MySQL Basics</a></li>
-      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
-      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
-      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">Finals Lab Task 4: Using MySQL Clause</a></li>
-      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">Finals Lab Task 5: Using SQL Views, Stored Procedures & Functions</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Finals-Lab_Task-1/" target="_blank" rel="noopener noreferrer">Finals Lab Task 1: MYSQL Basics</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-2/" target="_blank" rel="noopener noreferrer">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-3/" target="_blank" rel="noopener noreferrer">Finals Lab Task 3: Data Manipulation</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-3/" target="_blank" rel="noopener noreferrer">Finals Lab Task 3.1: Using MYSQL Clause</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-5/" target="_blank" rel="noopener noreferrer">Finals Lab Task 5: Using SQL Views and Stored Procedures and Stored Functions</a></li>
     </ul>
   </div>
 
