@@ -2,126 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EDM Portfolio - Hacker Style</title>
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <title>Vian's Hacker Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      font-family: 'Share Tech Mono', monospace;
-      background-color: #000;
+    body {
+      background-color: #0d1117;
       color: #00ff00;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-family: 'Courier New', Courier, monospace;
       padding: 20px;
     }
-
-    .notification-box {
-      border: 2px solid #00ffff;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 800px;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.85);
-      box-shadow: 0 0 20px #00ffff;
+    .terminal {
+      white-space: pre-wrap;
+      line-height: 1.5;
     }
-
-    .notification-title {
-      font-size: 2rem;
-      color: #00ffff;
-      text-align: center;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #00ffff;
-      padding-bottom: 10px;
+    .blue {
+      color: #00bfff;
     }
-
-    .section {
-      margin-bottom: 20px;
+    .green {
+      color: #00ff00;
     }
-
-    .section-title, .subsection-title {
-      color: #00ffff;
-      font-size: 1.2rem;
-      margin-bottom: 5px;
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
     }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-left: 10px;
-      margin-bottom: 5px;
-    }
-
-    .start-btn {
-      display: block;
-      margin: 30px auto 0;
-      padding: 10px 40px;
-      font-size: 1rem;
-      background: transparent;
-      border: 2px solid #00ffff;
-      color: #00ffff;
-      border-radius: 5px;
+    a {
+      color: #00bfff;
+      text-decoration: underline;
       cursor: pointer;
-      transition: 0.3s ease;
-      text-decoration: none;
-      text-align: center;
-      width: fit-content;
     }
-
-    .start-btn:hover {
-      background-color: #00ffff;
-      color: black;
-      box-shadow: 0 0 10px #00ffff;
+    a:hover {
+      color: #00ff00;
+    }
+    button {
+      background-color: transparent;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00ff0033;
     }
   </style>
 </head>
 <body>
-  <div class="notification-box">
-    <div class="notification-title">EDM-Portfolio</div>
-
-    <div class="section">
-      <div class="section-title">About Me</div>
-      <div>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</div>
-    </div>
-
-    <div class="section">
-      <div class="section-title">Education</div>
-      <ul>
-        <li>College: City College of Angeles</li>
-        <li>Senior High School: Angeles City Senior High School</li>
-        <li>High School: Francisco G. Nepomuceno Memorial High School</li>
-        <li>Elementary: Salapungan Elementary School</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <div class="section-title">My Projects</div>
-      <ul>
-        <li class="subsection-title">Midterm Activity</li>
-        <li>• Midterm Lab Task 1: Data Cleaning and Preparation using Excel</li>
-        <li>• Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</li>
-        <li>• Midterm Lab Task 3: Creating Pivot Table and Dashboard</li>
-        <br>
-        <li class="subsection-title">Finals Activity</li>
-        <li>• Finals Lab Task 1: MYSQL Basics</li>
-        <li>• Finals Lab Task 2: Transforming ER Model to Relational Tables</li>
-        <li>• Finals Lab Task 3: Table Manipulation</li>
-        <li>• Finals Lab Task 4: Using MYSQL Clause</li>
-        <li>• Finals Lab Task 5: Using SQL Views, Stored Procedures, and Stored Functions</li>
-      </ul>
-    </div>
-
-    <a href="portfolio.html" class="start-btn">START</a>
+  <div class="terminal" id="terminal">
+    <span>This is Vian's Portfolio. Do you want to go deep?</span><br><br>
+    <button onclick="showPortfolio()">Yes</button>
+    <button onclick="getLost()">No</button>
   </div>
+
+  <script>
+    const terminal = document.getElementById('terminal');
+
+    const portfolioHTML = `
+<span class="green">EDM-Portfolio</span>
+<span class="blue">This portfolio contains copies of my Enterprise Data Management Lab Exercises</span>
+
+<span class="green">About Me</span>
+<span class="blue">Hi! i am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles.  I'm striving to become successful someday</span>
+
+<span class="green">Education</span>
+<span class="blue">College: City College of Angeles</span>
+<span class="blue">Senior High School: Angeles City Senior High School</span>
+<span class="blue">High School: Francisco G. Nepomuceno Memorial High School</span>
+<span class="blue">Elementary: Salapungan Elementary School</span>
+
+<span class="green">My Projects</span>
+
+<span class="green">Midterm Activity</span>
+<span class="blue">- Midterm Lab Task 1: Data Cleaning and Preparation using Excel (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Midterm Lab Task 2: Data Cleaning and Preparation using Power Query (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Midterm Lab Task 3: Creating Pivot Table and Dashboard (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank" rel="noopener noreferrer">link</a>)</span>
+
+<span class="green">Finals Activity</span>
+<span class="blue">- Finals Lab Task 1: MYSQL Basics (<a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Finals Lab Task 2: Transforming ER Model to Relational Tables (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Finals Lab Task 3: Table Manipulation (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Finals Lab Task 4: Using MYSQL Clause (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
+<span class="blue">- Finals Lab Task 5: Using SQL views and Stored Procedures and Stored Functions (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank" rel="noopener noreferrer">link</a>)</span>
+`;
+
+    function showPortfolio() {
+      terminal.innerHTML = '';
+      typeText(portfolioHTML, 0);
+    }
+
+    function getLost() {
+      terminal.innerHTML = '';
+      const msg = "Well, get lost.";
+      typeText(msg, 0);
+    }
+
+    function typeText(text, index) {
+      if (index < text.length) {
+        terminal.innerHTML += text.charAt(index);
+        setTimeout(() => typeText(text, index + 1), 10);
+      } else {
+        const cursor = document.createElement('span');
+        cursor.classList.add('blink');
+        cursor.textContent = '█';
+        terminal.appendChild(cursor);
+      }
+    }
+  </script>
 </body>
 </html>
