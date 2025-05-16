@@ -1,163 +1,103 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vian Mallari - EDM Portfolio</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
     body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      color: #333;
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(ellipse at center, #000010 0%, #000000 80%);
-      color: #a0d8f7;
-      min-height: 100vh;
-      overflow-x: hidden;
-      position: relative;
+      padding: 20px;
     }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; bottom: 0; right: 0;
-      background: url('https://i.ibb.co/QdXKXzw/star-bg.png') repeat;
-      background-size: contain;
-      opacity: 0.15;
-      z-index: -3;
-    }
-    body::after {
-      content: "";
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: url('https://i.ibb.co/nMCGZzk/asteroid.gif') repeat;
-      background-size: 100px;
-      animation: moveAsteroids 60s linear infinite;
-      opacity: 0.1;
-      z-index: -2;
-    }
-    @keyframes moveAsteroids {
-      0% {background-position: 0 0;}
-      100% {background-position: 1000px 1000px;}
-    }
-    h1 {
-      font-size: 3rem;
-      text-align: center;
-      color: #7fffd4;
-      text-shadow: 0 0 10px #7fffd4, 0 0 20px #0ff;
-      margin-top: 2rem;
-    }
-    h2 {
-      text-align: center;
-      color: #b0e0e6;
-      margin-top: -0.5rem;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: rgba(0, 0, 20, 0.65);
-      padding: 1.5rem 2rem;
-      border-radius: 15px;
-      box-shadow: 0 0 15px #00ffff88;
-    }
-    section h3 {
-      color: #90ee90;
-      border-bottom: 2px solid #0ff;
-      padding-bottom: 0.5rem;
+    h1, h2, h3 {
+      color: #0d47a1;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin: 0.8rem 0;
+      list-style-type: none;
+      padding: 0;
     }
     a {
-      color: #7fffd4;
-      font-weight: bold;
+      color: #0277bd;
       text-decoration: none;
+      display: block;
+      margin: 5px 0;
+      padding: 8px;
+      border: 1px solid #90caf9;
+      border-radius: 8px;
+      background-color: #e3f2fd;
     }
     a:hover {
-      color: #00ffff;
-      text-decoration: underline;
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-    button {
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 10px;
-      background: #7fffd4;
-      font-family: 'Orbitron', sans-serif;
-      color: #00110a;
-      font-weight: bold;
-      box-shadow: 0 0 10px #00ffff88;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    button:hover {
-      background: #00e6b7;
-    }
-    #midterm, #finals {
-      display: none;
+      background-color: #bbdefb;
     }
     iframe {
-      display: none;
+      width: 100%;
+      height: 600px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
 
-<h1>Vian Mallari</h1>
-<h2>EDM-Portfolio</h2>
-<p style="text-align:center; max-width:600px; margin:auto;">
-  This portfolio contains copies of my Enterprise Data Management Lab Exercises.
-</p>
+  <h1>Vian Mallari</h1>
+  <h2>EDM-Portfolio</h2>
+  <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises.</p>
 
-<section>
-  <h3>About Me</h3>
-  <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I started loving coding.</p>
-</section>
+  <div class="section">
+    <h3>About Me</h3>
+    <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I started loving coding.</p>
+  </div>
 
-<section>
-  <h3>Education</h3>
-  <ul>
-    <li>College: City College of Angeles</li>
-    <li>Senior High School: Angeles City Senior High School</li>
-    <li>High School: Francisco G. Nepomuceno Memorial High School</li>
-    <li>Elementary: Salapungan Elementary School</li>
-  </ul>
-</section>
+  <div class="section">
+    <h3>Education</h3>
+    <ul>
+      <li>College: City College of Angeles</li>
+      <li>Senior High School: Angeles City Senior High School</li>
+      <li>High School: Francisco G. Nepomuceno Memorial High School</li>
+      <li>Elementary: Salapungan Elementary School</li>
+    </ul>
+  </div>
 
-<div class="btn-container">
-  <button onclick="toggleSection('midterm')">Midterm Activity</button>
-  <button onclick="toggleSection('finals')">Finals Activity</button>
-</div>
+  <div class="section">
+    <h3>Midterm Activity</h3>
+    <ul>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Midterm-lab-task-1')">Midterm Lab Task 1: Excel</a></li>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Midterm-lab-task-2')">Midterm Lab Task 2: Power Query</a></li>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Midterm-lab-task-3')">Midterm Lab Task 3: Pivot Table</a></li>
+    </ul>
+  </div>
 
-<section id="midterm">
-  <h3>Midterm Activity</h3>
-  <ul>
-    <li><a href="https://github.com/Vmallari24-Hub/Midterm-lab-task-1" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Midterm-lab-task-2" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Midterm-lab-task-3" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
-  </ul>
-</section>
+  <div class="section">
+    <h3>Finals Activity</h3>
+    <ul>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-1')">Final Lab Task 1: MYSQL Basics</a></li>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-2')">Final Lab Task 2: ER Model</a></li>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-3')">Final Lab Task 3: Table Manipulation</a></li>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-3.1')">Final Lab Task 3-1: MYSQL Clause</a></li>
+      <li><a href="#" onclick="loadActivity('https://github.com/Vmallari24-Hub/Finals-lab-task-5')">Final Lab Task 5</a></li>
+    </ul>
+  </div>
 
-<section id="finals">
-  <h3>Finals Activity</h3>
-  <ul>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-1" target="_blank">Final Lab Task 1: MYSQL Basics</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-2" target="_blank">Final Lab Task 2: Transforming ER Model to Relational Tables</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-3" target="_blank">Final Lab Task 3: Table Manipulation</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-3.1" target="_blank">Final Lab Task 3-1: Using MYSQL Clause</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-lab-task-5" target="_blank">Final Lab Task 5</a></li>
-  </ul>
-</section>
+  <h3>Activity Preview</h3>
+  <iframe id="activityFrame" src=""></iframe>
 
-<!-- Background Music Embed (auto-muted) -->
-<iframe width="0" height="0" src="https://www.youtube.com/embed/NAOkK2wAxnY?autoplay=1&loop=1&playlist=NAOkK2wAxnY&mute=1" frameborder="0" allow="autoplay"></iframe>
+  <!-- Background music (COPY version only!) -->
+  <audio autoplay loop>
+    <source src="music/dive-copy-version.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
 
-<script>
+  <script>
+    function loadActivity(url) {
+      document.getElementById('activityFrame').src = url;
+    }
+  </script>
+</body>
+</html>
