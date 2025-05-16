@@ -1,8 +1,8 @@
-!DOCTYPE html>
+!<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vian Mallari Portfolio</title>
   <style>
     body {
@@ -10,49 +10,55 @@
       font-family: 'Arial', sans-serif;
       background: url('IMAGE/cb0b1852-f745-4619-a7ca-e2ffdc21ea23.png') no-repeat center center fixed;
       background-size: cover;
-      overflow: hidden;
       color: white;
       text-align: center;
     }
+
     .container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      padding-top: 15%;
     }
+
     h1 {
-      font-size: 4rem;
-      margin: 0;
+      font-size: 4em;
+      margin-bottom: 10px;
     }
-    button {
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      background-color: #ff5c5c;
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      background-color: #ff4081;
       color: white;
-      cursor: pointer;
+      text-decoration: none;
+      border-radius: 30px;
+      display: inline-block;
+      transition: background-color 0.3s;
     }
-    button:hover {
-      background-color: #ff1f1f;
+
+    .button:hover {
+      background-color: #e91e63;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Vian Mallari</h1>
-    <button id="startBtn">Start</button>
+    <p>Welcome to my interstellar portfolio. Explore projects, skills, and more!</p>
+    <a href="https://github.com/Vmallari24-Hub/EDM-Portfolio" class="button" onclick="playSound()" target="_blank">Start</a>
   </div>
 
-  <audio id="spacesound" src="spaceship-sound.mp3" preload="auto"></audio>
+  <audio id="spaceshipSound" src="audio/spaceship-sound.mp3"></audio>
 
   <script>
-    document.getElementById("startBtn").addEventListener("click", function () {
-      document.getElementById("spacesound").play();
-      setTimeout(() => {
-        window.location.href = "https://vmallari24-hub.github.io/EDM-Portfolio/";
-      }, 800);
-    });
+    function playSound() {
+      document.getElementById("spaceshipSound").play();
+    }
   </script>
 </body>
 </html>
