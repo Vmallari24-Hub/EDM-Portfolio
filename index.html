@@ -1,169 +1,108 @@
-<!D<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>EDM Portfolio | Vmallari24</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vian Mallari Portfolio</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
     body {
       margin: 0;
-      padding: 2rem;
-      background: radial-gradient(ellipse at center, #0b0c26 0%, #000000 90%);
-      color: #d0d6f9;
-      font-family: 'Orbitron', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      text-shadow: 0 0 10px #66ccff;
-      text-align: center;
-    }
-    .btn-container {
-      margin: 2rem 0;
-    }
-    button {
-      margin: 0 1rem;
-      padding: 0.8rem 1.5rem;
-      font-size: 1.1rem;
-      background-color: transparent;
-      color: #99e6ff;
-      border: 2px solid #99e6ff;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background-color: #66ccff40;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      max-width: 800px;
-      width: 100%;
-    }
-    li {
-      background: rgba(20, 29, 78, 0.7);
-      margin: 1rem 0;
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #66ccff80;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px #99e6ffcc;
-    }
-    a {
-      color: #99e6ff;
-      text-decoration: none;
-      font-size: 1.3rem;
-      display: block;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .hidden {
-      display: none;
-    }
-    footer {
-      margin-top: 3rem;
-      color: #444a66;
-      font-size: 0.9rem;
-    }
-    body::before {
-      content: '';
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: url('https://i.ibb.co/7NqCZcR/starfield.png') repeat;
-      opacity: 0.3;
-      z-index: -1;
-      pointer-events: none;
-    }
+      font-family: Arial, sans-serif;
+      background: url('https://www.nasa.gov/sites/default/files/thumbnails/image/potw2021a.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }h1 {
+  text-align: center;
+  font-size: 3em;
+  margin: 30px 0;
+  color: #fff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+h2 {
+  border-bottom: 2px solid #0ff;
+  padding-bottom: 5px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "\2728";
+  margin-right: 10px;
+  color: #0ff;
+}
+
+.glow-button {
+  display: inline-block;
+  background-color: #000;
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+.glow-button:hover {
+  background-color: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff;
+}
+
   </style>
 </head>
 <body>
-  <h1>My EDM Portfolio</h1>
+  <h1>Vian Mallari</h1>
+  <div class="container">
+    <div class="section">
+      <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
+    </div><div class="section">
+  <h2>About Me</h2>
+  <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</p>
+</div>
 
-  <div class="btn-container">
-    <button onclick="showSection('midterm')">Midterm Activity</button>
-    <button onclick="showSection('finals')">Finals Activity</button>
-  </div>
-
-  <ul id="midterm" class="hidden">
-    <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
+<div class="section">
+  <h2>Education</h2>
+  <ul>
+    <li>College: City College of Angeles</li>
+    <li>Senior High School: Angeles City Senior High School</li>
+    <li>High School: Francisco G. Nepomuceno Memorial High School</li>
+    <li>Elementary: Salapungan Elementary School</li>
   </ul>
+</div>
 
-  <ul id="finals" class="hidden">
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">Finals Lab Task 1: MYSQL Basics</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1" target="_blank">Finals Lab Task 4: Using MYSQL Clause</a></li>
-    <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5" target="_blank">Finals Lab Task 5: SQL Views, Stored Procedures & Functions</a></li>
-  </ul>
+<div class="section">
+  <h2>My Projects</h2>
+  <h3>Midterm Activity</h3>
+  <a class="glow-button" href="#">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a><br>
+  <a class="glow-button" href="#">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a><br>
+  <a class="glow-button" href="#">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a>
 
-  <footer>© 2025 EDM Portfolio by Vmallari24</footer>
+  <h3>Finals Activity</h3>
+  <a class="glow-button" href="#">Finals Lab Task 1: MYSQL Basics</a><br>
+  <a class="glow-button" href="#">Finals Lab Task 2: Transforming ER Model to Relational Tables</a><br>
+  <a class="glow-button" href="#">Finals Lab Task 3: Table Manipulation</a><br>
+  <a class="glow-button" href="#">Finals Lab Task 4: Using MYSQL Clause</a><br>
+  <a class="glow-button" href="#">Finals Lab Task 5: Using SQL Views, Stored Procedures and Functions</a>
+</div>
 
-  <script>
-    function showSection(section) {
-      document.getElementById("midterm").classList.add("hidden");
-      document.getElementById("finals").classList.add("hidden");
-      document.getElementById(section).classList.remove("hidden");
-    }
-  </script>
-</body>
-</html>OCTYPE html>
-<ht    <p>[Insert content here]</p>
-    <span class="back" onclick="goBack()">← Back</span>
   </div>
-
-  <div id="finals2" class="task-content">
-    <h3>Finals Lab Task 2</h3>
-    <p>[Insert content here]</p>
-    <span class="back" onclick="goBack()">← Back</span>
-  </div>
-
-  <div id="finals3" class="task-content">
-    <h3>Finals Lab Task 3</h3>
-    <p>[Insert content here]</p>
-    <span class="back" onclick="goBack()">← Back</span>
-  </div>
-
-  <div id="finals4" class="task-content">
-    <h3>Finals Lab Task 4</h3>
-    <p>[Insert content here]</p>
-    <span class="back" onclick="goBack()">← Back</span>
-  </div>
-
-  <div id="finals5" class="task-content">
-    <h3>Finals Lab Task 5</h3>
-    <p>[Insert content here]</p>
-    <span class="back" onclick="goBack()">← Back</span>
-  </div>
-
-  <script>
-    function showSection(section) {
-      document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
-      document.querySelectorAll('.task-content').forEach(c => c.style.display = 'none');
-      document.getElementById(section).style.display = 'block';
-    }
-
-    function showTask(taskId) {
-      document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
-      document.querySelectorAll('.task-content').forEach(c => c.style.display = 'none');
-      document.getElementById(taskId).style.display = 'block';
-    }
-
-    function goBack() {
-      document.querySelectorAll('.task-content').forEach(c => c.style.display = 'none');
-      document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
-    }
-  </script>
-
 </body>
 </html>
