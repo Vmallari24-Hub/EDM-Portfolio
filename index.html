@@ -1,160 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vian Mhar R. Mallari Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Vian Mallari Portfolio</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      background-color: #0a0f0d;
-      font-family: 'Courier New', Courier, monospace;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      padding: 20px;
+      background-color: black;
       color: #00ff00;
-      background-image: radial-gradient(circle at center, #001100 0%, #000000 100%);
-    }
-
-    .terminal {
-      background-color: #000000dd;
-      border: 2px solid #00ff00;
-      box-shadow: 0 0 25px #00ff00;
-      border-radius: 12px;
-      padding: 20px;
-      width: 100%;
-      max-width: 960px;
-      line-height: 1.6;
-      white-space: pre-wrap;
-      overflow-x: auto;
-      margin-top: 20px;
-    }
-
-    .title {
-      color: #39ff14;
-      font-weight: bold;
-      font-size: 22px;
+      font-family: 'Courier New', Courier, monospace;
       text-align: center;
-      margin-top: 10px;
+      padding: 50px;
     }
 
-    .section {
-      margin-top: 15px;
-      color: #00eaff;
-      font-weight: bold;
+    h1, h2 {
+      color: #00ffff;
+      position: relative;
     }
 
-    .content {
-      color: #ffffffcc;
-      margin-left: 10px;
+    .glitch {
+      font-size: 36px;
+      color: #00ffff;
+      position: relative;
+      display: inline-block;
+      animation: glitch 1s infinite;
     }
 
-    a {
-      color: #00eaff;
-      text-decoration: underline;
+    @keyframes glitch {
+      0% {
+        text-shadow: 2px 0 red, -2px 0 blue;
+      }
+      20% {
+        text-shadow: -2px -2px red, 2px 2px blue;
+      }
+      40% {
+        text-shadow: 2px 2px red, -2px -2px blue;
+      }
+      60% {
+        text-shadow: -2px 2px red, 2px -2px blue;
+      }
+      80% {
+        text-shadow: 2px -2px red, -2px 2px blue;
+      }
+      100% {
+        text-shadow: -2px 0 red, 2px 0 blue;
+      }
     }
 
-    a:hover {
-      color: #39ff14;
+    .hidden {
+      display: none;
     }
 
     button {
-      background-color: transparent;
-      border: 1px solid #39ff14;
-      color: #39ff14;
-      font-family: 'Courier New', monospace;
+      background-color: black;
+      color: #00ff00;
+      border: 2px solid #00ffff;
       padding: 10px 20px;
-      margin-top: 10px;
-      margin-right: 10px;
+      margin: 10px;
+      font-size: 16px;
       cursor: pointer;
-      transition: background-color 0.3s, box-shadow 0.3s;
+      transition: background-color 0.3s, transform 0.3s;
     }
 
     button:hover {
-      background-color: #39ff1433;
-      box-shadow: 0 0 10px #39ff14;
+      background-color: #003300;
+      transform: scale(1.1);
     }
 
-    @media (max-width: 600px) {
-      .terminal {
-        font-size: 14px;
-        padding: 15px;
-      }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
 
-      button {
-        padding: 8px 14px;
-        font-size: 14px;
-      }
+    .section-title {
+      margin-top: 30px;
+      color: #00ffff;
+      font-size: 20px;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="title">Vian Mhar R. Mallari</div>
-
-  <div class="terminal" id="terminal">
-    <span>Do you want to begin your Nen journey?</span><br><br>
-    <button onclick="showPortfolio()">Yes</button>
-    <button onclick="getLost()">No</button>
+  <div id="startScreen">
+    <h1 class="glitch">This is Vian Mallari Portfolio</h1>
+    <p>Want to enter the portal?</p>
+    <button onclick="enterPortal()">Yes</button>
+    <button onclick="exitPortal()">No</button>
   </div>
 
-  <audio id="bgAudio" loop>
-    <source src="https://vgmsite.com/soundtracks/hunter-x-hunter-greed-island-original-soundtrack/edtxgmjm/01.%20Ohayou%21%20%28TV%20Size%29.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
+  <div id="mainContent" class="hidden">
+    <h1 class="glitch">Vian Mhar R. Mallari EDM-Portfolio</h1>
+    <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
+    
+    <div class="section-title">About Me</div>
+    <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I'm striving to become successful someday.</p>
+
+    <div class="section-title">Education</div>
+    <p><strong>College:</strong> City College of Angeles</p>
+    <p><strong>Senior High School:</strong> Angeles City Senior High School</p>
+    <p><strong>High School:</strong> Francisco G. Nepomuceno Memorial High School</p>
+    <p><strong>Elementary:</strong> Salapungan Elementary School</p>
+  </div>
+
+  <div id="exitMessage" class="hidden">
+    <h2 class="glitch">Exit Now!</h2>
+  </div>
 
   <script>
-    const terminal = document.getElementById('terminal');
-    const audio = document.getElementById('bgAudio');
-
-    const portfolioHTML = `
-<div class="section">EDM-Portfolio</div>
-<div class="content">This portfolio contains copies of my Enterprise Data Management Lab Exercises</div>
-
-<div class="section">About Me</div>
-<div class="content">Hi! I am Vian Mallari, a BS Information System student from City College of Angeles. I'm training my skills like a true Hunter.</div>
-
-<div class="section">Education</div>
-<div class="content">
-- College: City College of Angeles<br>
-- Senior High School: Angeles City Senior High School<br>
-- High School: Francisco G. Nepomuceno Memorial High School<br>
-- Elementary: Salapungan Elementary School
-</div>
-
-<div class="section">Midterm Activities</div>
-<div class="content">
-- Lab Task 1: Excel Cleaning (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">link</a>)<br>
-- Lab Task 2: Power Query (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">link</a>)<br>
-- Lab Task 3: Pivot Tables & Dashboards (<a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">link</a>)
-</div>
-
-<div class="section">Final Activities</div>
-<div class="content">
-- Lab Task 1: MySQL Basics (<a href="https://github.com/Vmallari24-Hub/Finals-Lab_Task-1" target="_blank">link</a>)<br>
-- Lab Task 2: ER to Relational Tables (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">link</a>)<br>
-- Lab Task 3: Table Manipulation (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">link</a>)<br>
-- Lab Task 4: MySQL Clauses (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">link</a>)<br>
-- Lab Task 5: Views & Stored Procedures (<a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">link</a>)
-</div>
-`;
-
-    function showPortfolio() {
-      terminal.innerHTML = portfolioHTML;
-      audio.volume = 0.4;
-      audio.play();
+    function enterPortal() {
+      document.getElementById("startScreen").classList.add("hidden");
+      document.getElementById("mainContent").classList.remove("hidden");
     }
 
-    function getLost() {
-      terminal.innerHTML = `<div class="content">You're not ready to be a Hunter. Come back when you master Zetsu.</div>`;
-      audio.pause();
+    function exitPortal() {
+      document.getElementById("startScreen").classList.add("hidden");
+      document.getElementById("exitMessage").classList.remove("hidden");
     }
   </script>
 </body>
