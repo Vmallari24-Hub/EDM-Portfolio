@@ -1,7 +1,9 @@
 # EDM-Portfolio
+<img align="left" width="150" height="150" src="https://www.python.org/python-.png">
+
 This portfolio contains copies of my Enterprise Data Management Lab Exercises
 ## About Me
-Hi! i am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I started loving coding
+Hi! i am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I started loving coding 
 
 ## Education
 
