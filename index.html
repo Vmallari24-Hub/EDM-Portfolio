@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vian Mallari Portfolio</title>
+  <title>Vian Mallari EDM-Portfolio</title>
   <style>
     body {
       background-color: black;
@@ -14,14 +14,11 @@
 
     h1, h2 {
       color: #00ffff;
-      position: relative;
     }
 
     .glitch {
       font-size: 36px;
       color: #00ffff;
-      position: relative;
-      display: inline-block;
       animation: glitch 1s infinite;
     }
 
@@ -57,6 +54,7 @@
     .container {
       max-width: 800px;
       margin: auto;
+      text-align: left;
     }
 
     .section-title {
@@ -72,7 +70,6 @@
     }
 
     a:hover {
-      text-decoration: underline;
       color: #00ffff;
     }
 
@@ -85,9 +82,12 @@
       margin: 10px 0;
     }
 
-    img {
-      border-radius: 10px;
-      margin-bottom: 20px;
+    img.profile {
+      float: left;
+      margin-right: 20px;
+      border: 2px solid #00ff00;
+      width: 150px;
+      height: 150px;
     }
   </style>
 </head>
@@ -99,100 +99,39 @@
     <button onclick="exitPortal()">No</button>
   </div>
 
-  <div id="mainContent" class="hidden">
-    <h1 class="glitch">Vian Mhar R. Mallari EDM-Portfolio</h1>
-    <img align="center" width="150" height="150" src="IMAGE/Messenger_creation_8E996F01-AA64-4FC4-8B7D-35CF02C35598.jpeg">
+  <div id="mainContent" class="hidden container">
+    <h1 class="glitch"># EDM-Portfolio</h1>
+    <img src="IMAGE/Messenger_creation_8E996F01-AA64-4FC4-8B7D-35CF02C35598.jpeg" alt="Profile" class="profile">
     <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
 
     <div class="section-title">About Me</div>
     <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I started loving coding.</p>
 
     <div class="section-title">Education</div>
-    <p><strong>College:</strong> City College of Angeles</p>
-    <p><strong>Senior High School:</strong> Angeles City Senior High School</p>
-    <p><strong>High School:</strong> Francisco G. Nepomuceno Memorial High School</p>
-    <p><strong>Elementary:</strong> Salapungan Elementary School</p>
+    <ul>
+      <li>College: City College of Angeles</li>
+      <li>Senior High School: Angeles City Senior High School</li>
+      <li>High School: Francisco G. Nepomuceno Memorial High School</li>
+      <li>Elementary: Salapungan Elementary School</li>
+    </ul>
 
     <div class="section-title">My Projects</div>
 
     <h3 style="color:#00ffff;">Midterm Activity</h3>
     <ul>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">
-          Midterm Lab Task 1: Data Cleaning and Preparation using Excel
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%201/README.md'">
-          Exit HTML View
-        </button>
-      </li>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">
-          Midterm Lab Task 2: Data Cleaning and Preparation using Power Query
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md'">
-          Exit HTML View
-        </button>
-      </li>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">
-          Midterm Lab Task 3: Creating Pivot Table and Dashboard
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md'">
-          Exit HTML View
-        </button>
-      </li>
+      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/tree/main/Lab%20Task%201#readme" target="_blank">Midterm Lab Task 1: Data Cleaning and Preparation using Excel</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%202/README.md" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/EDM-Portfolio/blob/main/Lab%20Task%203/README.md" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
     </ul>
 
     <h3 style="color:#00ffff;">Finals Activity</h3>
     <ul>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/Midterm-Lab-Task-1" target="_blank">
-          Finals Lab Task 1: MYSQL Basics
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/Midterm-Lab-Task-1'">
-          Exit HTML View
-        </button>
-      </li>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">
-          Finals Lab Task 2: Transforming ER Model to Relational Tables
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/blob/main/README.md'">
-          Exit HTML View
-        </button>
-      </li>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">
-          Finals Lab Task 3: Table Manipulation
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/blob/main/README.md'">
-          Exit HTML View
-        </button>
-      </li>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">
-          Finals Lab Task 4: Using MYSQL Clause
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/blob/main/README.md'">
-          Exit HTML View
-        </button>
-      </li>
-      <li>
-        <a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">
-          Finals Lab Task 5: Using SQL views and Stored Procedures and Stored Functions
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/blob/main/README.md'">
-          Exit HTML View
-        </button>
-      </li>
-      <li>
-        <a href="https://vmallari24-hub.github.io/Finals-Lab-Task-6/" target="_blank">
-          Finals Lab Task 6: MongoDB Practice
-        </a><br>
-        <button onclick="window.location.href='https://github.com/Vmallari24-Hub/Finals-Lab-Task-6/blob/main/index.html'">
-          Exit HTML View
-        </button>
-      </li>
+      <li><a href="https://github.com/Vmallari24-Hub/Midterm-Lab-Task-1" target="_blank">Finals Lab Task 1: MYSQL Basics</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-2/tree/main" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main" target="_blank">Finals Lab Task 4: Using MYSQL Clause</a></li>
+      <li><a href="https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main" target="_blank">Finals Lab Task 5: Using SQL Views, Stored Procedures & Functions</a></li>
+      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-6/" target="_blank">Finals Lab Task 6: MongoDB Practice</a></li>
     </ul>
   </div>
 
