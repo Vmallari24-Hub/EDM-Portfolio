@@ -1,5 +1,5 @@
 # EDM-Portfolio
-<img align="left" width="150" height="150" src="Messenger_creation_8E996F01-AA64-4FC4-8B7D-35CF02C35598.jpeg">
+<img align="left" width="150" height="150" src="IMAGE/Messenger_creation_8E996F01-AA64-4FC4-8B7D-35CF02C35598.jpeg">
 
 This portfolio contains copies of my Enterprise Data Management Lab Exercises
 ## About Me
