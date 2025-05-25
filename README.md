@@ -24,4 +24,4 @@ Hi! i am Vian Mallari, a Bachelor of Science in Information System student from 
 - Finals Lab Task 3: [Table Manipulation](https://github.com/Vmallari24-Hub/Finals-Lab-Task-3/tree/main)
 - Finals Lab Task 4: [Using MYSQL Clause](https://github.com/Vmallari24-Hub/Finals-Lab-Task-3.1/tree/main)
 - Finals Lab Task 5: [Using SQL views and Stored Procedures and Stored Functions](https://github.com/Vmallari24-Hub/Finals-Lab-Task-5/tree/main)
-- Finals Lab Task 6: [MongoDB Practice](https://github.com/Vmallari24-Hub/Finals-Lab-Task-6)
+- Finals Lab Task 6: [MongoDB Practice](https://vmallari24-hub.github.io/Finals-Lab-Task-6/)
