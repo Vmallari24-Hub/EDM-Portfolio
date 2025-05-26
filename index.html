@@ -31,9 +31,7 @@
       100% { text-shadow: -2px 0 red, 2px 0 blue; }
     }
 
-    .hidden {
-      display: none;
-    }
+    .hidden { display: none; }
 
     button {
       background-color: black;
@@ -86,8 +84,8 @@
       float: left;
       margin-right: 20px;
       border: 2px solid #00ff00;
-      width: 180px;
-      height: 180px;
+      width: 200px;
+      height: 200px;
     }
 
     .blue-border-box {
@@ -96,11 +94,46 @@
       padding: 20px;
       text-align: center;
     }
+
+    .task-box {
+      border: 2px solid #00ffff;
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #000011;
+    }
+
+    .task-box h4 {
+      color: #00ffff;
+    }
+
+    .task-box button {
+      margin-top: 10px;
+    }
+
+    #loadingScreen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: black;
+      color: #00ff00;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 24px;
+      z-index: 9999;
+    }
   </style>
 </head>
 <body>
+  <!-- LOADING SCREEN -->
+  <div id="loadingScreen">
+    <h1 class="glitch">Loading Vian Mallari's Code Portal...</h1>
+    <p>Please wait...</p>
+  </div>
+
   <!-- FRONT PAGE -->
-  <div id="startScreen">
+  <div id="startScreen" class="hidden">
     <h1 class="glitch">This is Vian Mallari Portfolio</h1>
     <p>Want to enter the portal?</p>
     <button onclick="enterPortal()">Yes</button>
@@ -137,21 +170,71 @@
     <div class="section-title">My Projects</div>
 
     <h3 style="color:#00ffff;">Midterm Activity</h3>
-    <ul>
-      <li><a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-1/" target="_blank">Midterm Lab Task 1: Data Cleaning and Preperation using Excel</a></li>
-      <li><a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-2/" target="_blank">Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</a></li>
-      <li><a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-3/" target="_blank">Midterm Lab Task 3: Creating Pivot Table and Dashboard</a></li>
-    </ul>
+
+    <div class="task-box">
+      <h4>Midterm Lab Task 1: Data Cleaning and Preparation using Excel</h4>
+      <a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-1/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="task-box">
+      <h4>Midterm Lab Task 2: Data Cleaning and Preparation using Power Query</h4>
+      <a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-2/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="task-box">
+      <h4>Midterm Lab Task 3: Creating Pivot Table and Dashboard</h4>
+      <a href="https://vmallari24-hub.github.io/Midterm-Lab-Task-3/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
 
     <h3 style="color:#00ffff;">Finals Activity</h3>
-    <ul>
-      <li><a href="https://vmallari24-hub.github.io/Finals-Lab_Task-1/" target="_blank">Finals Lab Task 1: MYSQL Basics</a></li>
-      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-2/" target="_blank">Finals Lab Task 2: Transforming ER Model to Relational Tables</a></li>
-      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-3/" target="_blank">Finals Lab Task 3: Table Manipulation</a></li>
-      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-3.1/" target="_blank">Finals Lab Task 4: Using MYSQL Clause</a></li>
-      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-5/" target="_blank">Finals Lab Task 5: Using SQL Views, Stored Procedures & Functions</a></li>
-      <li><a href="https://vmallari24-hub.github.io/Finals-Lab-Task-6/" target="_blank">Finals Lab Task 6: MongoDB Practice</a></li>
-    </ul>
+
+    <div class="task-box">
+      <h4>Finals Lab Task 1: MYSQL Basics</h4>
+      <a href="https://vmallari24-hub.github.io/Finals-Lab_Task-1/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="task-box">
+      <h4>Finals Lab Task 2: Transforming ER Model to Relational Tables</h4>
+      <a href="https://vmallari24-hub.github.io/Finals-Lab-Task-2/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="task-box">
+      <h4>Finals Lab Task 3: Table Manipulation</h4>
+      <a href="https://vmallari24-hub.github.io/Finals-Lab-Task-3/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="task-box">
+      <h4>Finals Lab Task 4: Using MYSQL Clause</h4>
+      <a href="https://vmallari24-hub.github.io/Finals-Lab-Task-3.1/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="task-box">
+      <h4>Finals Lab Task 5: Using SQL Views, Stored Procedures & Functions</h4>
+      <a href="https://vmallari24-hub.github.io/Finals-Lab-Task-5/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="task-box">
+      <h4>Finals Lab Task 6: MongoDB Practice</h4>
+      <a href="https://vmallari24-hub.github.io/Finals-Lab-Task-6/" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
   </div>
 
   <!-- EXIT PAGE -->
@@ -160,6 +243,13 @@
   </div>
 
   <script>
+    window.onload = function () {
+      setTimeout(() => {
+        document.getElementById("loadingScreen").classList.add("hidden");
+        document.getElementById("startScreen").classList.remove("hidden");
+      }, 7000);
+    };
+
     function enterPortal() {
       document.getElementById("startScreen").classList.add("hidden");
       document.getElementById("mainContent").classList.remove("hidden");
