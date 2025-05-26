@@ -112,32 +112,12 @@
       display: inline-block;
       margin-top: 10px;
     }
-
-    /* Splash screen */
-    #loadingScreen {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      color: #00ff00;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      font-size: 24px;
-      font-weight: bold;
-    }
   </style>
 </head>
 <body>
 
-  <!-- SPLASH SCREEN -->
-  <div id="loadingScreen">Loading... Please wait</div>
-
   <!-- FRONT PAGE -->
-  <div id="startScreen" class="hidden">
+  <div id="startScreen">
     <h1 class="glitch">This is Vian Mallari Portfolio</h1>
     <p>Want to enter the portal?</p>
     <button onclick="enterPortal()">Yes</button>
@@ -160,10 +140,10 @@
     <img src="IMAGE/Messenger_creation_8E996F01-AA64-4FC4-8B7D-35CF02C35598.jpeg" alt="Profile" class="profile">
     <p>This portfolio contains copies of my Enterprise Data Management Lab Exercises</p>
 
-    <div class="section-title">About Me</div>
+    <div class="section-title">👤 About Me</div>
     <p>Hi! I am Vian Mallari, a Bachelor of Science in Information System student from City College of Angeles. I started loving coding.</p>
 
-    <div class="section-title">Education</div>
+    <div class="section-title">🎓 Education</div>
     <ul>
       <li>College: City College of Angeles</li>
       <li>Senior High School: Angeles City Senior High School</li>
@@ -171,9 +151,9 @@
       <li>Elementary: Salapungan Elementary School</li>
     </ul>
 
-    <div class="section-title">My Projects</div>
+    <div class="section-title">💼 My Projects</div>
 
-    <h3 style="color:#00ffff;">Midterm Activity</h3>
+    <h3 style="color:#00ffff;">🧪 Midterm Activity</h3>
 
     <div class="project-box">
       <h4>Midterm Lab Task 1: Data Cleaning and Preparation using Excel</h4>
@@ -188,7 +168,7 @@
       <button onclick="window.open('https://vmallari24-hub.github.io/Midterm-Lab-Task-3/', '_blank')">View Project</button>
     </div>
 
-    <h3 style="color:#00ffff;">Finals Activity</h3>
+    <h3 style="color:#00ffff;">🧪 Finals Activity</h3>
 
     <div class="project-box">
       <h4>Finals Lab Task 1: MYSQL Basics</h4>
@@ -223,14 +203,6 @@
 
   <!-- SCRIPT -->
   <script>
-    // Splash screen for 5 seconds
-    window.onload = function () {
-      setTimeout(() => {
-        document.getElementById("loadingScreen").classList.add("hidden");
-        document.getElementById("startScreen").classList.remove("hidden");
-      }, 5000);
-    };
-
     function enterPortal() {
       document.getElementById("startScreen").classList.add("hidden");
       document.getElementById("mainContent").classList.remove("hidden");
